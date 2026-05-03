@@ -1,11 +1,40 @@
-# performancePrediction
-Fonctionnement du Code
-Ce script utilise Python pour analyser des données d'un fichier CSV appelé AI-Data.csv. Son objectif est d'explorer visuellement les relations entre les classes de notes des étudiants et plusieurs variables (genre, nationalité, section, etc.) et d'évaluer la précision de différents modèles de classification.
+# Student Performance Prediction
+**Machine Learning Project | Python**
 
-Importation et Préparation des Données : Le fichier AI-Data.csv est chargé avec pandas, puis certaines colonnes sont supprimées pour simplifier le modèle. Des valeurs catégoriques sont ensuite encodées en valeurs numériques.
+## Overview
+Classification models trained on student data to predict 
+academic performance based on features such as gender, 
+nationality, semester, and section.
 
-Visualisation des Données : Une fonction permet de générer plusieurs graphiques (par classe, semestre, genre, etc.), facilitant ainsi l'analyse visuelle des tendances.
+## Models Compared
+| Model | Train/Test Split |
+|-------|-----------------|
+| Decision Tree | 70% / 30% |
+| Random Forest | 70% / 30% |
+| Logistic Regression | 70% / 30% |
+| Perceptron | 70% / 30% |
+| Neural Network | 70% / 30% |
 
-Classification et Évaluation des Modèles : Le script utilise différents modèles de machine learning (arbre de décision, forêt aléatoire, perceptron, régression logistique et réseau de neurones) pour classer les données. Les modèles sont entraînés sur 70 % des données et évalués sur les 30 % restants, et la précision de chaque modèle est affichée avec des rapports de classification.
+## Pipeline
+1. Data loading & preprocessing (Pandas)
+2. Categorical encoding
+3. Data visualization by class, semester, genre
+4. Model training & evaluation
+5. Classification reports & accuracy scores
+6. Manual prediction input
 
-Prédiction : L'utilisateur peut tester une prédiction spécifique en entrant manuellement des valeurs pour chaque attribut. Les prédictions des différents modèles sont ensuite affichées.
+## Tech Stack
+| Layer | Technologies |
+|-------|-------------|
+| Language | Python |
+| ML | Scikit-learn |
+| Data | Pandas · NumPy |
+| Visualization | Matplotlib · Seaborn |
+| Dataset | AI-Data.csv |
+
+## How to Run
+```bash
+git clone https://github.com/meriamouazdou/performancePrediction
+pip install pandas scikit-learn matplotlib seaborn
+python projet.py
+```
